@@ -1,0 +1,94 @@
+/*Slideshow div*/
+.slideshow {
+    /*Keeps slideshow images uniform when size changes*/
+    height: 45vw;
+    /*Prevents images from covering body*/
+    overflow: hidden;
+    /*Adds bottom border*/
+    border-bottom: solid 1px rgb(182, 177, 177);
+}
+
+/*Slideshow images*/
+.slideshow-img {
+    /*Slideshow animation*/
+    animation: fade 8s infinite;
+}
+
+/*Slideshow animation*/
+@keyframes fade {
+    0% {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 60%;
+        transform: scale(1.1);
+    }
+    99% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+    }
+}
+
+/*!!!NEEDS WORK!!!*/
+.nav-menu h3{
+    font-size: 1.04vw;
+    margin-right: 1.6vw;
+    display: inline-block;
+}
+.nav-menu h2 {
+    color: rgb(235, 226, 226);
+    font-size: 1.25vw;
+    padding-top: 1vw;
+}
+.nav-menu {
+    border: solid 1px rgb(235, 226, 226);
+    border-radius: 2vw;
+    overflow: hidden;
+    position: absolute;
+    background-color:rgb(39, 37, 37);
+    box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.781);
+    z-index: 98;
+    text-align: center;
+    top: 50vw;
+    left: 50vw;
+    transform: translate(-50%, -315%);
+    width: 30vw;
+    height: 10vw;
+}
+
+/*Sets properties of the start-where div*/
+.start-where {
+    color:rgb(235, 226, 226);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.start-where a {
+    text-decoration: underline;
+}
+
+/*!!!NEEDS WORK!!!*/
+#part-container {
+    position: relative;
+}
+#particles {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start-where h1 {
+    font-size: 1.66vw
+}
+
+.start-where p, .info p {
+    font-size: 0.85vw;
+}

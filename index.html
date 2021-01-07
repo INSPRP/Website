@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/basics.css">
+        <link rel="stylesheet" href="css/index.css">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/insprp.png">
+        <title>Home - INSPRP</title>
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header>
+            <h3 style="padding-left: 1.4vw;"><a class="hover-anim" href="#">Home</a></h3>
+            <h3><a class="hover-anim" href="html/about-us.html">About Us</a></h3>
+            <h3><a class="hover-anim" href="html/update.html">Updates</a></h3>
+
+            <!-- Drop Down Menu Items -->
+            <div class="dropdown">
+                <h3><a href="html/information/information.html">Information</a></h3>
+                <div class="dropdown-anim dropdown-keyframe">
+                    <h4><a class="hover-anim" href="html/information/rules.html">Rules</a></h4>
+                    <h4><a class="hover-anim" href="html/information/faq.html">FAQ</a></h4>
+                    <h4><a class="hover-anim" href="html/information/roster.html">Roster</a></h4>
+                    <h4><a class="hover-anim" href="html/information/new-player.html">New to Server?</a></h4>
+                </div>
+            </div>
+            <div class="dropdown">
+                <h3 style="border-right: none;"><a href="html/applications/applications.html">Applications</a></h3>
+                <div class="dropdown-anim dropdown-keyframe" style="padding-right: 15px; padding-left: 15px;">
+                    <h4><a class="hover-anim" href="html/applications/police-app.html">Police</a></h4>
+                    <h4><a class="hover-anim" href="html/applications/fire-ems-app.html">Fire/EMS</a></h4>
+                    <h4><a class="hover-anim" href="html/applications/dispatch-app.html">Dispatch</a></h4>
+                    <h4><a class="hover-anim" href="html/applications/ban-appeal.html">Ban Appeal</a></h4>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!--Navigation menu over the slideshow-->
+            <div class="nav-menu">
+                <h2>Welcome Home...</h2>
+                <h3><a href="html/about-us.html" class="hover-anim">About us</a></h3>
+                <h3><a href="https://discord.com/invite/bQagr5x" class="hover-anim">Discord</a></h3>
+                <h3><a href="html/information/faq.html" class="hover-anim">FAQ</a></h3>
+
+                <!--Particles.js-->
+                <div id="part-container">
+                    <div id="particles"></div>
+                    <script src="libs/particles/particles.min.js"></script>
+                    <script src="libs/particles/app.js"></script>
+                </div>
+            </div>
+
+            <!--Slideshow-->
+            <div class="slideshow">
+
+                <!--Images for slideshow-->
+                <img class="slideshow-img" src="images/slideshow/slide-1.png">
+                <img class="slideshow-img" src="images/slideshow/slide-2.png">
+                <img class="slideshow-img" src="images/slideshow/slide-3.png">
+                <img class="slideshow-img" src="images/slideshow/slide-4.png">
+                <img class="slideshow-img" src="images/slideshow/slide-5.png">
+            </div>
+            
+            <!--Allows images to appear and disappear-->
+            <script>
+                var slideNum = 0;
+                slideshow();
+
+                function slideshow() {
+                    var x = document.getElementsByClassName("slideshow-img")
+                    for (var y = 0; y < x.length; y++) {
+                        x[y].style.display = "none";
+                    }
+                    x[slideNum].style.display = "block";
+                    slideNum++;
+                    if (slideNum == x.length) { slideNum = 0; }
+                    setTimeout(function(){slideshow()}, 7000);
+                }
+            </script>
+        </main>
+
+        <!--Who we are-->
+        <div class="info">
+            <h2>Who are we?</h2>
+            <p></p>
+            <img>
+        </div>
+
+        <!--The bottom part of the page, so people can get started-->
+        <div class="start-where">
+            <h1 style="padding-bottom: 0.5vw;">Where Do I Start?</h1>
+            <p style="margin-bottom: -0.25vw;"><b><i>Firstly,</i></b> make sure the server is running at top notch speed by checking out our <i><a href="status-index.html">Status Page</i></a>.</p>
+            <br>
+            <p><b><i>Secondly,</i></b> make sure you check out the <i><a href="html/information/new-player.html">New Players Information</i></a>, as it contains everything, from how to be able to join our server to how our commands work</p>
+        </div>
+    </body>
+
+    <!--Footer-->
+    <footer>
+        <i>
+            <p style="margin-bottom: -16px;">@ 2021 Indiana State Police Roleplay</p>
+            <br>
+            <p>INSPRP FiveM Server</p>
+            <br>
+            <p><a href="html/report-bug.html">Report Bug</a></p>
+            <p><a href="https://discord.com/invite/bQagr5x">Discord</a></p>
+            <p><a style="border: none;" href="status-index.html">Server Status</a></p>
+        </i>
+    </footer>
+</html>

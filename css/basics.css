@@ -1,0 +1,119 @@
+/*Starting HTML shit*/
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(48, 47, 47)
+}
+
+/*Sets font*/
+* {
+    font-family: Montserrat, Arial;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.781);
+    background-color: rgb(24, 21, 21);
+    z-index: 99;
+    position: relative;
+    font-size: 0.8vw;
+    height: 3vw;
+}
+header h3 {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: solid 1px rgb(235, 226, 226);
+}
+
+
+/*Anchor Animations*/
+a.hover-anim {
+    position: relative;
+}
+a.hover-anim::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+a.hover-anim:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/*Sets anchor properties*/
+a {
+    text-decoration: none;
+    color:rgb(235, 226, 226);
+}
+
+/*Dropdown & Dropdown Animations*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-keyframe {
+    animation: downAnim 0.6s ease-in-out forwards;
+    transform-origin: top center;
+}
+.dropdown-anim {
+    background-color:rgb(24, 21, 21);
+    box-shadow: 3px 3px 3px 1px black;
+    display: none;
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    top: 100%;
+    width: 7.5vw;
+    left: 0;
+}
+
+/*Dropdown animation block*/
+.dropdown-anim a {
+    display: block;
+    text-align: center;
+    border-bottom:rgb(235, 226, 226) solid 1px;
+    padding-bottom: 7px;
+}
+.dropdown:hover .dropdown-anim {
+    display: block;
+}
+
+/*Dropdown animation*/
+@keyframes downAnim {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(12, 11, 11);
+    text-align: center;
+    color:rgb(235, 226, 226);
+    padding-top: 1.12vw;
+    padding-bottom: 0.5vw;
+    border-top: solid 1px rgb(95, 93, 93);
+}
+footer a {
+    padding-right: 15px;
+    border-right: solid rgb(235, 226, 226) 1px;
+    padding-left: 15px;
+}
+footer p {
+    display: inline-block;
+    font-size: 0.8vw;
+}
+footer a:hover {
+    text-decoration: underline;
+}

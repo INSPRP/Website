@@ -6,6 +6,19 @@
     overflow: hidden;
     /*Adds bottom border*/
     border-bottom: solid 1px rgb(182, 177, 177);
+
+    min-width: 900px;
+}
+
+@media (max-width: 900px) {
+    .slideshow {
+        height: 35em;
+    }
+    .slideshow-img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*Slideshow images*/
@@ -39,29 +52,29 @@
 
 /*!!!NEEDS WORK!!!*/
 .nav-menu h3{
-    font-size: 1.04vw;
-    margin-right: 1.6vw;
+    font-size: 1.04rem;
+    margin-right: 1.6em;
     display: inline-block;
 }
 .nav-menu h2 {
     color: rgb(235, 226, 226);
-    font-size: 1.25vw;
-    padding-top: 1vw;
+    font-size: 1.25em;
+    padding-top: 1em;
 }
 .nav-menu {
     border: solid 1px rgb(235, 226, 226);
-    border-radius: 2vw;
+    border-radius: 2vh;
     overflow: hidden;
     position: absolute;
     background-color:rgb(39, 37, 37);
     box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.781);
     z-index: 98;
     text-align: center;
-    top: 50vw;
+    top: 50vh;
     left: 50vw;
     transform: translate(-50%, -315%);
-    width: 30vw;
-    height: 10vw;
+    width: 30vh;
+    height: 10vh;
 }
 
 /*Sets properties of the start-where div*/
@@ -86,9 +99,9 @@
 }
 
 .start-where h1 {
-    font-size: 1.66vw
+    font-size: 1.66em
 }
 
 .start-where p, .info p {
-    font-size: 0.85vw;
+    font-size: 0.85em;
 }

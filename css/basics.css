@@ -17,14 +17,21 @@ header {
     background-color: rgb(24, 21, 21);
     z-index: 99;
     position: relative;
-    font-size: 0.8vw;
-    height: 3vw;
+    font-size: 0.7rem;
+    height: 3rem;
 }
 header h3 {
     display: inline-block;
     padding-left: 15px;
     padding-right: 15px;
     border-right: solid 1px rgb(235, 226, 226);
+}
+
+@media (max-width: 515px) {
+    header h3 {
+        font-size: 0.65rem;
+        margin-top: 18px;
+    }
 }
 
 
@@ -71,7 +78,7 @@ a {
     position: absolute;
     padding: 5px 10px 5px 10px;
     top: 100%;
-    width: 7.5vw;
+    width: 7.5em;
     left: 0;
 }
 
@@ -101,8 +108,8 @@ footer {
     background-color: rgb(12, 11, 11);
     text-align: center;
     color:rgb(235, 226, 226);
-    padding-top: 1.12vw;
-    padding-bottom: 0.5vw;
+    padding-top: 1.12rem;
+    padding-bottom: 0.5rem;
     border-top: solid 1px rgb(95, 93, 93);
 }
 footer a {
@@ -112,7 +119,7 @@ footer a {
 }
 footer p {
     display: inline-block;
-    font-size: 0.8vw;
+    font-size: 0.8em;
 }
 footer a:hover {
     text-decoration: underline;

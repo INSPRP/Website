@@ -90,17 +90,27 @@ main {
 }
 
 .start-where p, .info p {
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 .aboutus {
     margin-left: 15px;
 }
 
+.info {
+    color:rgb(235, 226, 226);
+}
+
+.info p {
+    margin-left: 30px;
+    line-height: 20px;
+    text-align: center;
+
+}
+
 @media (max-width: 1100px) {
     .slideshow {
         height: 35em;
-        
     }
     main {
         overflow: hidden;
@@ -124,5 +134,9 @@ main {
     }
     .aboutus {
         margin-left: 0;
+    }
+    .info p {
+        width: 100%;
+        margin-left: 0px;
     }
 }

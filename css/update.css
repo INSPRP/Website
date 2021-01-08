@@ -1,0 +1,13 @@
+.update {
+    text-align: center;
+    color: rgb(235, 226, 226);
+    border-top:rgb(235, 226, 226) solid 1px;
+    border-bottom: rgb(235, 226, 226) solid 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.update p {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

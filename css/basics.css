@@ -2,7 +2,8 @@
 html, body {
     padding: 0;
     margin: 0;
-    background-color: rgb(48, 47, 47)
+    background-color: rgb(48, 47, 47);
+    overflow-x: hidden;
 }
 
 /*Sets font*/
@@ -17,23 +18,17 @@ header {
     background-color: rgb(24, 21, 21);
     z-index: 99;
     position: relative;
-    font-size: 0.7rem;
-    height: 3rem;
+    font-size: 1.05rem;
+    height: 4.3rem;
 }
 header h3 {
     display: inline-block;
     padding-left: 15px;
     padding-right: 15px;
     border-right: solid 1px rgb(235, 226, 226);
+    margin-top: 24px;
+    color:rgb(235, 226, 226);
 }
-
-@media (max-width: 515px) {
-    header h3 {
-        font-size: 0.65rem;
-        margin-top: 18px;
-    }
-}
-
 
 /*Anchor Animations*/
 a.hover-anim {
@@ -123,4 +118,15 @@ footer p {
 }
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    header h3 {
+        font-size: 0.65rem;
+        margin-top: 30px;
+    }
+    .dropdown-anim {
+        width: 4rem;
+        font-size: 0.8rem;
+    }
 }

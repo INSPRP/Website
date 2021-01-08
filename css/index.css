@@ -6,19 +6,7 @@
     overflow: hidden;
     /*Adds bottom border*/
     border-bottom: solid 1px rgb(182, 177, 177);
-
-    min-width: 900px;
-}
-
-@media (max-width: 900px) {
-    .slideshow {
-        height: 35em;
-    }
-    .slideshow-img {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    min-width: 1100px;
 }
 
 /*Slideshow images*/
@@ -52,14 +40,19 @@
 
 /*!!!NEEDS WORK!!!*/
 .nav-menu h3{
-    font-size: 1.04rem;
-    margin-right: 1.6em;
-    display: inline-block;
+    font-size: 1.1rem;
+    margin-right: 2vw;
+    display: inline;
 }
 .nav-menu h2 {
     color: rgb(235, 226, 226);
-    font-size: 1.25em;
-    padding-top: 1em;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.nav-menu h2, .nav-menu h3 {
+    text-align: center;
+    width: 100%;
 }
 .nav-menu {
     border: solid 1px rgb(235, 226, 226);
@@ -70,11 +63,16 @@
     box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.781);
     z-index: 98;
     text-align: center;
-    top: 50vh;
+    top: 50%;
     left: 50vw;
-    transform: translate(-50%, -315%);
-    width: 30vh;
-    height: 10vh;
+    transform: translate(-50%, -75%);
+    width: 40%;
+    height: 170px;
+}
+
+main {
+    position: sticky;
+    vertical-align: top;
 }
 
 /*Sets properties of the start-where div*/
@@ -87,21 +85,44 @@
     text-decoration: underline;
 }
 
-/*!!!NEEDS WORK!!!*/
-#part-container {
-    position: relative;
-}
-#particles {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .start-where h1 {
     font-size: 1.66em
 }
 
 .start-where p, .info p {
     font-size: 0.85em;
+}
+
+.aboutus {
+    margin-left: 15px;
+}
+
+@media (max-width: 1100px) {
+    .slideshow {
+        height: 35em;
+        
+    }
+    main {
+        overflow: hidden;
+    }
+    .slideshow img {
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    .nav-menu {
+        height: 35%;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 300px;
+    }
+    .nav-menu h3 {
+        display: block;
+        font-size: 1rem;
+    }
+    .nav-menu h2 {
+        font-size: 1.2rem;
+    }
+    .aboutus {
+        margin-left: 0;
+    }
 }

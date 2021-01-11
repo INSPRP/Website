@@ -1,0 +1,17 @@
+.faq {
+    text-align: center;
+    color: rgb(235, 226, 226);
+}
+
+.faq h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.faq p {
+    margin-bottom: 40px;
+    border-bottom:rgb(235, 226, 226) solid 1px;
+    padding-bottom: 45px;
+}
+.faq h3 {
+    margin-top: 45px;
+}

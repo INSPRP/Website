@@ -1,0 +1,71 @@
+.get-started {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.get-started span {
+    background-color: rgb(24, 21, 21);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.step-title {
+    margin-left: 20px;
+    border-bottom: 2px solid rgb(235, 226, 226);
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+
+.step {
+    margin-bottom: 70px;
+}
+
+.title, .subtitle {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(235, 226, 226);
+}
+
+.subtitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.step, .title, .subtitle {
+    color:rgb(235, 226, 226);
+}
+
+.subtext {
+    margin-left: 30px;
+}
+
+ul {
+    margin-left: 30px;
+}
+ul a {
+    text-decoration: underline;
+}
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.civ-commands {
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.step-title-title {
+    text-decoration: underline;
+}
+.another-steptitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+.another-steptitle-subtext {
+    margin-left: 60px;
+}

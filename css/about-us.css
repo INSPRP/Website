@@ -1,0 +1,44 @@
+/*
+<div class="feature">
+    <h2 class="feature-title"></h2>
+    <p class="feature-text"></p>
+    <img class="feature-img" src="">
+</div>
+*/
+.feature {
+    margin-left: 30px;
+}
+.feature, .feature2 {
+    width: 30%;
+    margin-top: 50px;
+}
+.feature-title, .feature-text, #title, .ending-text, .get-started {
+    text-align: center;
+    color: rgb(235, 226, 226);
+}
+.feature2 {
+    margin-right: 30px;
+    margin-left: 65%;
+}
+.feature-img {
+    border: 1px solid rgb(235, 226, 226);
+    width: 600px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: -120px;
+}
+
+.get-started {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.get-started span {
+    background-color: rgb(24, 21, 21);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "insprp-website",
+  "version": "1.0.0",
+  "description": "Indiana State Police Roleplay Website : Join the Fight",
+  "main": "index.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "ThatPrimitive",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fivem-api": "^1.5.0"
+  }
+}
